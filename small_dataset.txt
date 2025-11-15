@@ -1,0 +1,11 @@
+Location,Country,Category,Visitors,Rating,Revenue,Accommodation_Available
+kuBZRkVsAR,India,Nature,948853,1.32,84388.38,Yes
+aHKUXhjzTo,USA,Historical,813627,2.01,802625.6,No
+dlrdYtJFTA,Brazil,Nature,508673,1.42,338777.11,Yes
+DxmlzdGkHK,Brazil,Historical,623329,1.09,295183.6,Yes
+WJCCQlepnz,France,Cultural,124867,1.43,547893.24,No
+IKdhVWFKRc,Egypt,Cultural,389886,2.19,943411.34,Yes
+TKEPcTbQFY,China,Beach,416933,3.92,744983.22,Yes
+TjmJpYuNne,China,Historical,652046,2.5,796172.02,Yes
+OcCopAsiyJ,Australia,Cultural,59309,4.1,588988.55,Yes
+pXDJPYzTeU,India,Adventure,319068,1.98,239590.44,No

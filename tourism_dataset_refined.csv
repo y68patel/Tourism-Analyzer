@@ -1,0 +1,169 @@
+Location,Country,Category,Visitors,Rating,Revenue,Accommodation_Available
+Kerala Backwaters,India,Nature,948853,1.32,84388.38,Yes
+Sundarbans,India,Nature,490207,2.58,267279.35,Yes
+Munnar,India,Nature,677699,3.24,500007.44,Yes
+Jim Corbett National Park,India,Nature,589849,4.82,59869.33,Yes
+Taj Mahal,India,Historical,472874,3.05,125893.77,Yes
+Hampi,India,Historical,945441,3.44,473372.63,Yes
+Red Fort,India,Historical,686213,3.6,76735.01,No
+Qutub Minar,India,Historical,536932,3.66,90932.16,No
+Varanasi,India,Cultural,323378,4.36,658536.04,No
+Jaipur,India,Cultural,811018,1.5,303651.03,Yes
+Udaipur,India,Cultural,404119,1.48,358069.05,Yes
+Amritsar,India,Cultural,778164,2.27,844887.66,No
+Goa,India,Beach,466796,3.62,179208.55,Yes
+Gokarna,India,Beach,598971,4.65,221567.21,Yes
+Kovalam Beach,India,Beach,884454,2.39,250674.99,Yes
+Puducherry,India,Beach,439423,4.66,671970.91,Yes
+Rishikesh,India,Adventure,319068,1.98,239590.44,No
+Manali,India,Adventure,805195,2.14,296584.73,No
+Leh Ladakh,India,Adventure,778496,1.48,823063.26,Yes
+Auli,India,Adventure,280691,1.52,405425.51,Yes
+Mumbai,India,Urban,324508,3.45,322444.49,Yes
+Delhi,India,Urban,772355,4.24,761817.3,Yes
+Bengaluru,India,Urban,383698,3.67,829888.19,No
+Hyderabad,India,Urban,220510,4.96,270442.89,No
+Grand Canyon,USA,Nature,476373,3.45,627963.76,Yes
+Yellowstone,USA,Nature,808255,1.0,627270.04,Yes
+Yosemite,USA,Nature,717709,2.8,193323.16,No
+Zion National Park,USA,Nature,752607,2.97,126871.98,No
+Independence Hall,USA,Historical,813627,2.01,802625.6,No
+Gettysburg,USA,Historical,44317,2.17,25761.36,No
+Alamo Mission,USA,Historical,131940,2.95,78710.35,No
+Mount Vernon,USA,Historical,308326,3.18,711128.84,Yes
+New Orleans,USA,Cultural,834414,2.81,373506.21,Yes
+Boston,USA,Cultural,705490,3.58,135875.08,Yes
+Philadelphia,USA,Cultural,220021,2.11,370255.4,Yes
+Chicago,USA,Cultural,985854,4.88,954644.51,Yes
+Miami Beach,USA,Beach,859352,4.85,719007.54,No
+Santa Monica,USA,Beach,95710,3.33,892770.47,No
+Myrtle Beach,USA,Beach,531843,2.7,703874.88,No
+Clearwater Beach,USA,Beach,173382,4.4,203034.47,No
+Moab,USA,Adventure,971260,3.86,355943.11,Yes
+Denali,USA,Adventure,117254,3.74,742830.59,Yes
+Lake Tahoe,USA,Adventure,432079,3.03,94876.63,Yes
+Hawaii Volcanoes Park,USA,Adventure,516044,3.61,969966.78,Yes
+New York City,USA,Urban,855061,2.26,444125.87,Yes
+Los Angeles,USA,Urban,722612,1.43,226727.8,Yes
+Chicago,USA,Urban,685583,4.09,688891.65,Yes
+Houston,USA,Urban,628892,1.65,401588.99,No
+Amazon Rainforest,Brazil,Nature,508673,1.42,338777.11,Yes
+Iguaçu Falls,Brazil,Nature,343668,4.89,599369.61,Yes
+Pantanal,Brazil,Nature,453488,3.75,967025.98,Yes
+Chapada Diamantina,Brazil,Nature,78496,2.61,803448.83,No
+Ouro Preto,Brazil,Historical,623329,1.09,295183.6,Yes
+Paraty,Brazil,Historical,418753,2.98,776482.65,No
+Olinda,Brazil,Historical,328287,2.0,751160.68,Yes
+Pelourinho,Brazil,Historical,87323,3.28,828804.43,Yes
+Salvador,Brazil,Cultural,240840,2.47,965213.66,No
+Recife,Brazil,Cultural,815605,4.82,855184.74,Yes
+São Luís,Brazil,Cultural,154090,2.53,596608.85,Yes
+Fortaleza,Brazil,Cultural,570123,3.23,563018.14,No
+Copacabana,Brazil,Beach,290650,2.26,181736.4,No
+Ipanema,Brazil,Beach,736570,3.43,465182.45,No
+Jericoacoara,Brazil,Beach,8597,3.95,195612.43,Yes
+Praia do Forte,Brazil,Beach,211850,2.71,580041.81,No
+Chapada dos Veadeiros,Brazil,Adventure,354395,1.53,99945.41,Yes
+Lençóis Maranhenses,Brazil,Adventure,519911,2.11,738577.57,Yes
+Fernando de Noronha,Brazil,Adventure,910609,3.19,749939.16,Yes
+Serra dos Órgãos,Brazil,Adventure,843204,2.13,845030.73,Yes
+Rio de Janeiro,Brazil,Urban,775117,2.16,160352.45,No
+São Paulo,Brazil,Urban,72822,2.93,286814.85,Yes
+Brasília,Brazil,Urban,894805,4.74,494169.35,No
+Salvador,Brazil,Urban,211680,4.35,95607.25,Yes
+Mont Blanc,France,Nature,40594,3.89,897569.52,No
+Verdon Gorge,France,Nature,824764,2.29,490377.6,No
+Corsica Mountains,France,Nature,651039,3.02,684678.49,Yes
+Camargue,France,Nature,807290,4.54,458120.63,No
+Palace of Versailles,France,Historical,543762,2.77,183324.89,No
+Mont-Saint-Michel,France,Historical,271788,3.67,736500.94,No
+Normandy,France,Historical,783089,4.76,386071.49,No
+Louvre Museum,France,Historical,529052,2.97,973022.71,Yes
+Paris,France,Cultural,124867,1.43,547893.24,No
+Lyon,France,Cultural,643212,1.43,252763.47,Yes
+Avignon,France,Cultural,705398,4.16,8769.54,No
+Strasbourg,France,Cultural,307691,3.68,516067.67,No
+Nice Beach,France,Beach,73266,1.15,205619.81,Yes
+Saint-Tropez,France,Beach,720785,1.16,301370.15,Yes
+Cannes,France,Beach,958216,2.84,93854.02,No
+Biarritz,France,Beach,705070,1.67,462808.75,Yes
+Chamonix,France,Adventure,362929,4.33,822928.71,No
+Pyrenees,France,Adventure,738466,4.38,763568.3,Yes
+French Alps,France,Adventure,324369,1.85,12184.01,No
+Gorges du Tarn,France,Adventure,687152,4.15,776678.91,No
+Paris,France,Urban,788932,3.6,329445.58,Yes
+Marseille,France,Urban,624967,1.4,878526.96,No
+Nice,France,Urban,405785,3.47,545406.04,Yes
+Toulouse,France,Urban,350952,1.03,358037.82,Yes
+White Desert,Egypt,Nature,536667,2.84,36495.39,No
+Siwa Oasis,Egypt,Nature,843145,4.33,110052.4,Yes
+Ras Mohammed National Park,Egypt,Nature,34309,4.93,67278.34,Yes
+Mount Sinai,Egypt,Nature,162564,3.97,730059.98,No
+Pyramids of Giza,Egypt,Historical,466195,4.17,273956.7,Yes
+Luxor,Egypt,Historical,309822,4.84,27527.28,Yes
+Valley of the Kings,Egypt,Historical,348801,4.78,29927.14,No
+Saqqara,Egypt,Historical,737696,2.89,193544.15,No
+Cairo,Egypt,Cultural,389886,2.19,943411.34,Yes
+Alexandria,Egypt,Cultural,3127,1.21,995339.37,No
+Aswan,Egypt,Cultural,689575,1.1,336925.19,No
+Giza,Egypt,Cultural,171913,3.78,544876.12,Yes
+Sharm El Sheikh,Egypt,Beach,942659,3.4,412987.76,Yes
+Hurghada,Egypt,Beach,521645,2.3,453309.54,No
+Dahab,Egypt,Beach,56971,3.37,424589.56,Yes
+Marsa Alam,Egypt,Beach,780437,1.16,92664.26,No
+Mount Sinai,Egypt,Adventure,797939,2.21,593518.54,No
+Red Sea Diving,Egypt,Adventure,655732,1.96,354590.03,No
+Fayoum Desert,Egypt,Adventure,149482,4.44,479894.14,Yes
+Sinai Trail,Egypt,Adventure,186437,2.64,573635.11,No
+Cairo,Egypt,Urban,394910,1.17,669396.49,No
+Alexandria,Egypt,Urban,909638,2.25,741764.58,No
+Giza,Egypt,Urban,574387,3.55,925242.19,Yes
+Port Said,Egypt,Urban,475758,4.54,595614.8,No
+Zhangjiajie,China,Nature,388912,4.81,989138.15,Yes
+Jiuzhaigou Valley,China,Nature,961522,3.9,372219.78,No
+Huangshan,China,Nature,484204,1.5,679823.04,No
+Guilin,China,Nature,955332,1.5,321127.18,Yes
+Great Wall,China,Historical,652046,2.5,796172.02,Yes
+Terracotta Army,China,Historical,864679,3.9,417381.06,Yes
+Forbidden City,China,Historical,719905,3.7,292642.11,Yes
+Summer Palace,China,Historical,616673,4.67,934499.63,Yes
+Beijing,China,Cultural,310407,1.76,152734.82,Yes
+Shanghai,China,Cultural,758884,2.16,800239.58,No
+Xi'an,China,Cultural,229338,1.9,363284.19,Yes
+Hangzhou,China,Cultural,494634,2.62,248016.71,Yes
+Sanya,China,Beach,416933,3.92,744983.22,Yes
+Beidaihe,China,Beach,96904,4.65,836114.32,Yes
+Xiamen Beach,China,Beach,901898,4.97,646908.09,Yes
+Yalong Bay,China,Beach,115125,1.07,933126.88,No
+Tibet Plateau,China,Adventure,363763,2.52,98062.85,Yes
+Mount Everest North Base Camp,China,Adventure,834320,1.38,928727.04,No
+Tiger Leaping Gorge,China,Adventure,255444,4.31,82993.3,No
+Zhangjiajie Glass Bridge,China,Adventure,25520,1.74,475869.31,No
+Shanghai,China,Urban,833742,4.3,347415.33,No
+Beijing,China,Urban,929191,2.24,693545.83,Yes
+Shenzhen,China,Urban,150273,2.82,4490.1,Yes
+Guangzhou,China,Urban,569490,2.53,699628.4,Yes
+Great Barrier Reef,Australia,Nature,677168,3.41,989416.73,Yes
+Blue Mountains,Australia,Nature,412795,1.34,13352.38,Yes
+Daintree Rainforest,Australia,Nature,808349,1.01,598753.61,Yes
+Uluru,Australia,Nature,205036,1.86,778577.2,Yes
+Port Arthur,Australia,Historical,825993,3.82,621813.92,No
+The Rocks Sydney,Australia,Historical,877034,1.01,487971.82,Yes
+Sovereign Hill,Australia,Historical,81186,1.85,704950.07,No
+Fremantle Prison,Australia,Historical,136593,4.12,502494.25,Yes
+Sydney Opera House,Australia,Cultural,59309,4.1,588988.55,Yes
+Melbourne,Australia,Cultural,802317,1.87,111955.55,Yes
+Hobart,Australia,Cultural,812741,3.32,897449.41,Yes
+Adelaide,Australia,Cultural,802225,1.63,380374.99,Yes
+Bondi Beach,Australia,Beach,520163,3.63,65560.3,Yes
+Gold Coast,Australia,Beach,926326,3.57,726054.05,No
+Whitehaven Beach,Australia,Beach,637337,4.78,959725.69,No
+Manly Beach,Australia,Beach,972818,3.61,18709.61,No
+Tasmania Trails,Australia,Adventure,950658,2.93,809130.85,No
+Great Ocean Road,Australia,Adventure,765094,4.73,808802.5,Yes
+Whitsundays,Australia,Adventure,192563,4.69,121401.03,Yes
+Ningaloo Reef,Australia,Adventure,614983,1.23,410561.19,No
+Sydney,Australia,Urban,25568,4.2,941320.46,Yes
+Melbourne,Australia,Urban,767695,1.06,653154.24,No
+Brisbane,Australia,Urban,232327,2.4,400977.82,No
+Perth,Australia,Urban,878392,4.3,821471.41,No
