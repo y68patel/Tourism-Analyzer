@@ -5,5 +5,6 @@ Salvador,Brazil,Urban,211680,4.35,95607.25,Yes
 French Alps,France,Adventure,324369,1.85,12184.01,No
 Great Barrier Reef,Australia,Nature,677168,3.41,989416.73,Yes
 Great Wall,China,Historical,652046,2.5,796172.02,Yes
-Jaipur,India,Cultural,811018,1.5,303651.03,Yes
+Munnar,India,Nature,677699,3.24,500007.44,Yes
 Goa,India,Beach,466796,3.62,179208.55,Yes
+Puducherry,India,Beach,439423,4.66,671970.91,Yes

@@ -62,6 +62,9 @@ def choice_1(filename):
     print("-"*50)
 
 def avg_rating_by_country_name(country_name,filename):
+    """Takes the country name and filename as the parameter and returns the average 
+        rating of the country by adding up all the ratings for all the locations of 
+        the country and dividing it by the number of locations."""
     inline = open(filename, "r")
     line = inline.readline()
     count = 0
@@ -73,10 +76,13 @@ def avg_rating_by_country_name(country_name,filename):
             count += 1
         line = inline.readline()
     inline.close()
-        
+    if total == 0:
+        return 0
     return total/count
 
 def choice_2(filename):
+    """Reads the file and outputs the average ratings per country and 
+        states the country with the highest average rating."""
     print("="*50)
     print(" "*9,"Ratings per Country")
     print("="*50)
@@ -100,6 +106,9 @@ def choice_2(filename):
 
 
 def popular_category(user_country, filename):
+    """Takes the country name, given by user, and the filename as the parameters and 
+        outputs the most popular category in that country. A popular category is defined
+        by the category with the most visitors."""
     category_index = 2
     unique_categories = unique_list(filename, category_index)
     visitors_per_category = []
@@ -127,6 +136,9 @@ def popular_category(user_country, filename):
     return unique_categories[max_visitor_index]
 
 def get_locations_by_popular_category(filename, country):
+    """Takes the filename and the country name as the parameters and returns
+        a list of locations (along with other info: visitors, rating, accomodation) 
+        that match the popular category and are from the given country."""
     result = []
     inline= open(filename, "r")
     line = inline.readline()
@@ -146,6 +158,10 @@ def get_locations_by_popular_category(filename, country):
 
 
 def top_rated(user_country, filename):
+    """Takes the country name and the filename as the parameters and
+        returns the top rated location (along with other relevant info: 
+        Category, Visitors, Rating, availability of accomodations) from 
+        that country"""
     inline = open(filename, "r")
     line = inline.readline()
     line = inline.readline()
@@ -165,6 +181,10 @@ def top_rated(user_country, filename):
     return (f"Location: {location}{" "*(30-len("Location: ")-len(location))}Category: {category}{" "*(25-len("Category: ")-len(category))}Visitors: {visitors}{" "*(20-len("Visitors: ")-len(visitors))}Rating: {max_rating}{" "*(15-len("Rating: ")-len(str(max_rating)))}Accomodation Available: {accomodation}\n")
 
 def most_visitors(user_country, filename):
+    """Takes the country name and the filename as parameters and
+        returns the location (along with other relevant info: category, 
+        visitors, rating, availability of accomodation) from that 
+        country with the most visitors."""
     max_visitors = 0
     inline = open(filename, "r")
     line = inline.readline()
@@ -184,6 +204,8 @@ def most_visitors(user_country, filename):
     return (f"Location: {location}{" "*(30-len("Location: ")-len(location))}Category: {category}{" "*(25-len("Category: ")-len(category))}Visitors: {max_visitors}{" "*(20-len("Visitors: ")-len(str(max_visitors)))}Rating: {rating}{" "*(15-len("Rating: ")-len(str(rating)))}Accomodation Available: {accomodation}\n")
 
 def num_of_accomodations(user_country, filename):
+    """Takes the country name and the filename as the parameters and
+        returns the percentage of locations that provide accomodations."""
     inline = open(filename, "r")
     line = inline.readline()
     line = inline.readline()
@@ -197,9 +219,18 @@ def num_of_accomodations(user_country, filename):
             count+=1
         line = inline.readline()
     inline.close()
+    if count == 0:
+        return 0
     return round(((num_accomodation/count)*100),2)
 
 def choice_3_preference_1(write_filename, read_filename, country):
+    """Takes the name of the file to read, file to write and the name of 
+        the country as the parameters and writes a report of the country
+        to the given file. The report includes: the top rates location in
+        that country, the most visited location in that country, the % of
+        locations in that country that provide accomodations, the most popular
+        type of tourism in that country and a list of locations that correspond
+        to that popular category."""
     outline = open(write_filename, "w")
     outline.write("="*50 + f"\n{country}\n" + "="*50)
     outline.write(f"\n\nThe top rated location in {country}:\n")
@@ -218,6 +249,10 @@ def choice_3_preference_1(write_filename, read_filename, country):
     outline.close()
 
 def choice_3_preference_2(write_filename, read_filename, country, category):
+    """Takes the name of the file to read, name of the file to write, the name of 
+        the country and the name of the category as the parameters and writes a 
+        list of locations, to the given file, corresponding to the given country 
+        and category."""
     inline = open(read_filename, "r")
     outline = open(write_filename,"w")
     outline.write(f"Here are a list of locations based on your preferences. Country: {country}     Category: {category}\n\n")
@@ -238,6 +273,8 @@ def choice_3_preference_2(write_filename, read_filename, country, category):
 
 
 def choice_3(filename, preference):
+    """Takes the filename and the users' preference(1 or 2) and calls 
+        the respective function."""
     if preference == 1:
         country_list = unique_list(filename, 1)
         while True:
@@ -267,6 +304,8 @@ def choice_3(filename, preference):
         
 
 def total_revenue(country, filename):
+    """Takes the country name and the filename as the parameters and
+        returns the total revenue for the given country."""
     inline = open(filename, "r")
     line = inline.readline()
     line = inline.readline()
