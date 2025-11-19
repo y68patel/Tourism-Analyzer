@@ -1,6 +1,6 @@
-Here are a list of locations based on your preferences. Country: Egypt     Category: Historical
+Here are a list of locations based on your preferences. Country: Australia     Category: Urban
 
-Location: Pyramids of Giza              Visitors: 466195         Rating: 4.17        Accomodation Available: Yes
-Location: Luxor                         Visitors: 309822         Rating: 4.84        Accomodation Available: Yes
-Location: Valley of the Kings           Visitors: 348801         Rating: 4.78        Accomodation Available: No
-Location: Saqqara                       Visitors: 737696         Rating: 2.89        Accomodation Available: No
+Location: Sydney                        Visitors: 25568          Rating: 4.2         Accomodation Available: Yes
+Location: Melbourne                     Visitors: 767695         Rating: 1.06        Accomodation Available: No
+Location: Brisbane                      Visitors: 232327         Rating: 2.4         Accomodation Available: No
+Location: Perth                         Visitors: 878392         Rating: 4.3         Accomodation Available: No

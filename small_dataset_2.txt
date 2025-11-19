@@ -3,7 +3,6 @@ Jim Corbett National Park,India,Nature,589849,4.82,59869.33,Yes
 Miami Beach,USA,Beach,859352,4.85,719007.54,No
 Salvador,Brazil,Urban,211680,4.35,95607.25,Yes
 French Alps,France,Adventure,324369,1.85,12184.01,No
-Giza,Egypt,Cultural,171913,3.78,544876.12,Yes
 Great Barrier Reef,Australia,Nature,677168,3.41,989416.73,Yes
 Great Wall,China,Historical,652046,2.5,796172.02,Yes
 Jaipur,India,Cultural,811018,1.5,303651.03,Yes
