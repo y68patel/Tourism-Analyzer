@@ -1,19 +1,6 @@
-==================================================
-France
-==================================================
+Here are a list of locations based on your preferences. Country: Egypt     Category: Historical
 
-The top rated location in France:
-Location: Normandy            Category: Historical     Visitors: 783089    Rating: 4.76   Accomodation Available: No
--------------------------
-The most visited location in France:
-Location: Cannes              Category: Beach          Visitors: 958216    Rating: 2.84   Accomodation Available: No
--------------------------
-41.67% of the locations in France have Accomodations available.
--------------------------
-Most popular type of tourism in France is 'Beach'
-Here is a list of Beach places in France:
-
-Location: Nice Beach                    Visitors: 73266          Rating: 1.15        Accomodation Available: Yes
-Location: Saint-Tropez                  Visitors: 720785         Rating: 1.16        Accomodation Available: Yes
-Location: Cannes                        Visitors: 958216         Rating: 2.84        Accomodation Available: No
-Location: Biarritz                      Visitors: 705070         Rating: 1.67        Accomodation Available: Yes
+Location: Pyramids of Giza              Visitors: 466195         Rating: 4.17        Accomodation Available: Yes
+Location: Luxor                         Visitors: 309822         Rating: 4.84        Accomodation Available: Yes
+Location: Valley of the Kings           Visitors: 348801         Rating: 4.78        Accomodation Available: No
+Location: Saqqara                       Visitors: 737696         Rating: 2.89        Accomodation Available: No

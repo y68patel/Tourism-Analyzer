@@ -76,7 +76,6 @@ def choice_2(filename):
     print("="*50)
     print("Country"," "*(15),"Ratings")
     print("-"*50)
-    #can make a separate function for this above code ^^^
 
     country_index = 1
     countries = unique_list(filename,country_index)
@@ -195,7 +194,14 @@ def num_of_accomodations(user_country, filename):
     return round(((num_accomodation/count)*100),2)
 
 def choice_3_preference_1(write_filename, read_filename):
-    country = input("Enter Country [India, USA, Brazil, France, Egypt, China, Australia]: ")
+    country_list = unique_list(read_filename, 1)
+    while True:
+        country = input("Enter Country [India, USA, Brazil, France, Egypt, China, Australia]: ")
+        if country in country_list:
+            break
+        else:
+            print("Data for your chosen country is not available. Please choose from the given list.\n")
+
     outline = open(write_filename, "w")
     outline.write("="*50 + f"\n{country}\n" + "="*50)
     outline.write(f"\n\nThe top rated location in {country}:\n")
@@ -216,102 +222,53 @@ def choice_3_preference_1(write_filename, read_filename):
 def choice_3_preference_2(write_filename, read_filename):
     country_list = ["India", "USA", "Brazil", "France", "Egypt", "China", "Australia"]
     category_list = ["Nature", "Historical", "Cultural", "Beach", "Adventure", "Urban"]
-    country = input("Enter Country [India, USA, Brazil, France, Egypt, China, Australia]: ")
-    category = input("Enter Category [Nature, Historical, Cultural, Beach, Adventure, Urban]: ")
-    count_1 = 0
-    count_2 = 0
-    for i in range(len(country_list)):
-        if country == country_list[i]:
-                count_1+=1
-    if count_1 == 0:
-        print("Sorry, we do not have data for this country.")
-    for i in range(len(category_list)):
-        if category == category_list[i]:
-            count_2 += 1
-    if count_2 == 0:
-        print("Sorry, invalid category.")
-    if count_1 == 1 and count_2 == 1:
-        inline = open(read_filename, "r")
-        outline = open(write_filename,"w")
-        outline.write(f"Here are a list of locations based on your preferences. Country: {country}     Category: {category}\n\n")
-        line = inline.readline()
-        line = inline.readline()
-        while line != "":
-            line_list = line.strip().split(',')
-            if line_list[1] == country:
-                if line_list[2] == category:
-                    location = line_list[0]
-                    visitors = line_list[3]
-                    rating = line_list[4]
-                    accomodation = line_list[6]
-                    outline.write(f"Location: {location}{" "*(40-(len("Location: "))-len(location))}Visitors: {visitors}{" "*(25-(len("Visitors: "))-len(visitors))}Rating: {rating}{" "*(20-(len("Rating: "))-len(rating))}Accomodation Available: {accomodation}\n")
-            line = inline.readline()
-        inline.close()
-        outline.close()
 
+    while True:
+        country = input("Enter Country [India, USA, Brazil, France, Egypt, China, Australia]: ")
+        category = input("Enter Category [Nature, Historical, Cultural, Beach, Adventure, Urban]: ")
+        if (country in country_list) and (category in category_list):
+            break
+        elif country in country_list:
+            print("Invalid Category. Please choose from the given list.")
+        elif category in category_list:
+            print("Invalid Country. Please choose from the given list.")
+        else:
+            print("Invalid Country and Category. Please choose from the given list.")
 
+    inline = open(read_filename, "r")
+    outline = open(write_filename,"w")
+    outline.write(f"Here are a list of locations based on your preferences. Country: {country}     Category: {category}\n\n")
+    line = inline.readline()
+    line = inline.readline()
+    while line != "":
+        line_list = line.strip().split(',')
+        if line_list[1] == country:
+            if line_list[2] == category:
+                location = line_list[0]
+                visitors = line_list[3]
+                rating = line_list[4]
+                accomodation = line_list[6]
+                outline.write(f"Location: {location}{" "*(40-(len("Location: "))-len(location))}Visitors: {visitors}{" "*(25-(len("Visitors: "))-len(visitors))}Rating: {rating}{" "*(20-(len("Rating: "))-len(rating))}Accomodation Available: {accomodation}\n")
+        line = inline.readline()
+    inline.close()
+    outline.close()
 
 
 def choice_3(filename):
-    preference_1 = int(input("Do you want recommendations based on (1) Country (2) Country & Category (Enter 1 or 2): "))
-    while(preference_1 != 1) and (preference_1 != 2):
-        preference_1 = int(input("Invalid Input! Enter 1 or 2: "))
+    while True:
+        try:
+            preference_1 = int(input("Do you want recommendations based on (1) Country (2) Country & Category (Enter 1 or 2): "))
+            if preference_1 == 1 or preference_1 == 2:
+                break
+            else:
+                print("Invalid Input! Please enter 1 or 2.")
+        except ValueError:
+            print("Invalid Input! Please enter 1 or 2.")
     if preference_1 == 1:
         choice_3_preference_1("recommendation_by_country.txt", filename)
-        # country = input("Enter Country [India, USA, Brazil, France, Egypt, China, Australia]: ")
-        # # if country NOT in the list of unique countries keep ASKING
-        # outline = open("recommendation_by_country.txt","w")
-        # outline.write("="*50 + f"\n{country}\n" + "="*50)
-        # outline.write(f"\n\nThe top rated location in {country}:\n")
-        # outline.write(top_rated(country, filename))
-        # outline.write("-"*25)
-        # outline.write(f"\nThe most visited location in {country}:\n")
-        # outline.write(most_visitors(country, filename))
-        # outline.write("-"*25)
-        # outline.write(f"\n{num_of_accomodations(country, filename)}% of the locations in {country} have Accomodations available.\n")
-        # outline.write("-"*25)
-        # outline.write(f"\nMost popular type of tourism in {country} is '{popular_category(country, filename)}'\n")
-        # outline.write(f"Here is a list of {popular_category(country, filename)} places in {country}:\n\n")
-        # locations_by_pop_category = get_locations_by_popular_category(filename, country)
-        # for i in range(len(locations_by_pop_category)):
-        #     outline.write(f"{locations_by_pop_category[i]}\n")
-        # outline.close()
     elif preference_1 == 2:
         choice_3_preference_2("recommendation_by_country.txt", filename)
-        # country_list = ["India", "USA", "Brazil", "France", "Egypt", "China", "Australia"]
-        # category_list = ["Nature", "Historical", "Cultural", "Beach", "Adventure", "Urban"]
-        # country = input("Enter Country [India, USA, Brazil, France, Egypt, China, Australia]: ")
-        # category = input("Enter Category [Nature, Historical, Cultural, Beach, Adventure, Urban]: ")
-        # count_1 = 0
-        # count_2 = 0
-        # for i in range(len(country_list)):
-        #     if country == country_list[i]:
-        #         count_1+=1
-        # if count_1 == 0:
-        #     print("Sorry, we do not have data for this country.")
-        # for i in range(len(category_list)):
-        #     if category == category_list[i]:
-        #         count_2 += 1
-        # if count_2 == 0:
-        #     print("Sorry, invalid category.")
-        # if count_1 == 1 and count_2 == 1:
-        #     inline = open(filename, "r")
-        #     outline = open("recommendation_by_country_category.txt","w")
-        #     outline.write(f"Here are a list of locations based on your preferences. Country: {country}     Category: {category}\n\n")
-        #     line = inline.readline()
-        #     line = inline.readline()
-        #     while line != "":
-        #         line_list = line.strip().split(',')
-        #         if line_list[1] == country:
-        #             if line_list[2] == category:
-        #                 location = line_list[0]
-        #                 visitors = line_list[3]
-        #                 rating = line_list[4]
-        #                 accomodation = line_list[6]
-        #                 outline.write(f"Location: {location}{" "*(40-(len("Location: "))-len(location))}Visitors: {visitors}{" "*(25-(len("Visitors: "))-len(visitors))}Rating: {rating}{" "*(20-(len("Rating: "))-len(rating))}Accomodation Available: {accomodation}\n")
-        #         line = inline.readline()
-        #     inline.close()
-        #     outline.close()
+        
 
 def total_revenue(country, filename):
     inline = open(filename, "r")
@@ -334,7 +291,7 @@ def choice_4(filename):
     for i in range(len(country)):
         revenue = total_revenue(country[i],filename)
         space = " "*(15 - len(country[i]))
-        print(f"Country: {country[i]}{space}Revenue: {revenue}")
+        print(f"Country: {country[i]}{space}Revenue: {round(revenue,2)}")
 
 
 def main():
@@ -348,10 +305,16 @@ def main():
     print("3. Get Recommendations based on Country, Category")
     print("4. Total revenue by Country")
     
-    choice = int(input("\nYour Choice: "))  # add an exception when lettrs or characters are inputted
-    while choice<1 or choice>4:
-        print("Your input was invalid. Choose your preference from 1-4.")
-        choice = int(input("Your Choice: "))
+    while True:
+        try:
+            choice = int(input("Enter Your Choice: "))
+            if choice >= 1 and choice <= 4:
+                break
+            else:
+                print("Invalid Input. Please enter a number between 1 and 4.")
+        except ValueError:
+            print("Invalid Input. Please enter a number between 1 and 4.)")
+
     print()
     if choice == 1:
         choice_1("tourism_dataset_refined.csv")
