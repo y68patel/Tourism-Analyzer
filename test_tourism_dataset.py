@@ -5,7 +5,6 @@ from analyze_tourism_dataset import popular_category
 from analyze_tourism_dataset import num_of_accomodations
 from analyze_tourism_dataset import total_revenue
 
-
 def test_country_unique_list():
     filename = "small_dataset.txt"
     country_index = 1
