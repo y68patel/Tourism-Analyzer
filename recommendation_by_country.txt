@@ -1,6 +1,6 @@
-Here are a list of locations based on your preferences. Country: Australia     Category: Urban
+Here are a list of locations based on your preferences. Country: China     Category: Beach
 
-Location: Sydney                        Visitors: 25568          Rating: 4.2         Accomodation Available: Yes
-Location: Melbourne                     Visitors: 767695         Rating: 1.06        Accomodation Available: No
-Location: Brisbane                      Visitors: 232327         Rating: 2.4         Accomodation Available: No
-Location: Perth                         Visitors: 878392         Rating: 4.3         Accomodation Available: No
+Location: Sanya                         Visitors: 416933         Rating: 3.92        Accomodation Available: Yes
+Location: Beidaihe                      Visitors: 96904          Rating: 4.65        Accomodation Available: Yes
+Location: Xiamen Beach                  Visitors: 901898         Rating: 4.97        Accomodation Available: Yes
+Location: Yalong Bay                    Visitors: 115125         Rating: 1.07        Accomodation Available: No

@@ -61,6 +61,7 @@ def choice_1(filename):
     print("\nCountry with highest Visitors: ",max_country)
     print("-"*50)
 
+
 def avg_rating_by_country_name(country_name,filename):
     """Takes the country name and filename as the parameter and returns the average 
         rating of the country by adding up all the ratings for all the locations of 
@@ -178,7 +179,7 @@ def top_rated(user_country, filename):
                 accomodation = line_list[6]
         line = inline.readline()
     inline.close()
-    return (f"Location: {location}{" "*(30-len("Location: ")-len(location))}Category: {category}{" "*(25-len("Category: ")-len(category))}Visitors: {visitors}{" "*(20-len("Visitors: ")-len(visitors))}Rating: {max_rating}{" "*(15-len("Rating: ")-len(str(max_rating)))}Accomodation Available: {accomodation}\n")
+    return (f"Location: {location}{" "*(40-len("Location: ")-len(location))}Category: {category}{" "*(25-len("Category: ")-len(category))}Visitors: {visitors}{" "*(20-len("Visitors: ")-len(visitors))}Rating: {max_rating}{" "*(15-len("Rating: ")-len(str(max_rating)))}Accomodation Available: {accomodation}\n")
 
 def most_visitors(user_country, filename):
     """Takes the country name and the filename as parameters and
@@ -270,37 +271,6 @@ def choice_3_preference_2(write_filename, read_filename, country, category):
         line = inline.readline()
     inline.close()
     outline.close()
-
-
-def choice_3(filename, preference):
-    """Takes the filename and the users' preference(1 or 2) and calls 
-        the respective function."""
-    if preference == 1:
-        country_list = unique_list(filename, 1)
-        while True:
-            country = input("Enter Country [India, USA, Brazil, France, Egypt, China, Australia]: ")
-            if country in country_list:
-                break
-            else:
-                print("Data for your chosen country is not available. Please choose from the given list.\n")
-        choice_3_preference_1("recommendation_by_country.txt", filename, country)
-    elif preference == 2:
-        country_list = ["India", "USA", "Brazil", "France", "Egypt", "China", "Australia"]
-        category_list = ["Nature", "Historical", "Cultural", "Beach", "Adventure", "Urban"]
-
-        while True:
-            country = input("Enter Country [India, USA, Brazil, France, Egypt, China, Australia]: ")
-            category = input("Enter Category [Nature, Historical, Cultural, Beach, Adventure, Urban]: ")
-            if (country in country_list) and (category in category_list):
-                break
-            elif country in country_list:
-                print("Invalid Category. Please choose from the given list.")
-            elif category in category_list:
-                print("Invalid Country. Please choose from the given list.")
-            else:
-                print("Invalid Country and Category. Please choose from the given list.")
-
-        choice_3_preference_2("recommendation_by_country.txt", filename, country, category)
         
 
 def total_revenue(country, filename):
@@ -365,7 +335,34 @@ def main():
                     print("Invalid Input! Please enter 1 or 2.")
             except ValueError:
                 print("Invalid Input! Please enter 1 or 2.")
-        choice_3("tourism_dataset_refined.csv", preference)
+
+        if preference == 1:
+            country_list = unique_list("tourism_dataset_refined.csv", 1)
+            while True:
+                country = input("Enter Country [India, USA, Brazil, France, Egypt, China, Australia]: ")
+                if country in country_list:
+                    break
+                else:
+                    print("Data for your chosen country is not available. Please choose from the given list.\n")
+            choice_3_preference_1("recommendation_by_country.txt", "tourism_dataset_refined.csv", country)
+        if preference == 2:
+            country_list = ["India", "USA", "Brazil", "France", "Egypt", "China", "Australia"]
+            category_list = ["Nature", "Historical", "Cultural", "Beach", "Adventure", "Urban"]
+
+            while True:
+                country = input("Enter Country [India, USA, Brazil, France, Egypt, China, Australia]: ")
+                category = input("Enter Category [Nature, Historical, Cultural, Beach, Adventure, Urban]: ")
+                if (country in country_list) and (category in category_list):
+                    break
+                elif country in country_list:
+                    print("Invalid Category. Please choose from the given list.\n")
+                elif category in category_list:
+                    print("Invalid Country. Please choose from the given list.\n")
+                else:
+                    print("Invalid Country and Category. Please choose from the given list.\n")
+
+            choice_3_preference_2("recommendation_by_country.txt", "tourism_dataset_refined.csv", country, category)
+
     elif choice == 4:
         choice_4("tourism_dataset_refined.csv")
 

@@ -4,6 +4,8 @@ from analyze_tourism_dataset import avg_rating_by_country_name
 from analyze_tourism_dataset import popular_category
 from analyze_tourism_dataset import num_of_accomodations
 from analyze_tourism_dataset import total_revenue
+from analyze_tourism_dataset import get_locations_by_popular_category
+from analyze_tourism_dataset import top_rated
 
 def test_country_unique_list():
     filename = "small_dataset.txt"
@@ -121,3 +123,34 @@ def test_multiple_locations_total_revenue():
     expected_result = 59869.33 + 303651.03 + 179208.55
     result = total_revenue(country, filename)
     assert expected_result == result
+
+
+def test_multiple_locations_get_locations_by_popular_category():
+    filename = "small_dataset.txt"
+    country = "India"
+    expected_result = ["Location: Jaipur                        Visitors: 811018         Rating: 1.5         Accomodation Available: Yes"]
+    result = get_locations_by_popular_category(filename, country)
+    assert expected_result == result
+
+def test_one_locations_get_locations_by_popular_category():
+    filename = "small_dataset.txt"
+    country = "France"
+    expected_result = ["Location: French Alps                   Visitors: 324369         Rating: 1.85        Accomodation Available: No"]
+    result = get_locations_by_popular_category(filename, country)
+    assert expected_result == result
+
+
+def test_multiple_locations_top_rated():
+    filename = "small_dataset.txt"
+    country = "India"
+    expected_result = "Location: Jim Corbett National Park     Category: Nature         Visitors: 589849    Rating: 4.82   Accomodation Available: Yes\n"
+    result = top_rated(country, filename)
+    assert expected_result == result
+
+def test_one_locations_top_rated():
+    filename = "small_dataset.txt"
+    country = "USA"
+    expected_result = "Location: Miami Beach                   Category: Beach          Visitors: 859352    Rating: 4.85   Accomodation Available: No\n"
+    result = top_rated(country, filename)
+    assert expected_result == result
+
