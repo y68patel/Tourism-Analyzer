@@ -6,6 +6,7 @@ from analyze_tourism_dataset import num_of_accomodations
 from analyze_tourism_dataset import total_revenue
 from analyze_tourism_dataset import get_locations_by_popular_category
 from analyze_tourism_dataset import top_rated
+from analyze_tourism_dataset import most_visitors
 
 def test_country_unique_list():
     filename = "small_dataset.txt"
@@ -154,3 +155,16 @@ def test_one_locations_top_rated():
     result = top_rated(country, filename)
     assert expected_result == result
 
+def test_multiple_locations_most_visitors():
+    filename = "small_dataset.txt"
+    country = "India"
+    expected_result = "Location: Jaipur              Category: Cultural       Visitors: 811018    Rating: 1.5    Accomodation Available: Yes\n"
+    expected_result = most_visitors(country, filename)
+    assert expected_result == expected_result
+
+def test_one_locations_most_visitors():
+    filename = "small_dataset.txt"
+    country = "China"
+    expected_result = "Location: Great Wall          Category: Historical     Visitors: 652046    Rating: 2.5    Accomodation Available: Yes\n"
+    expected_result = most_visitors(country, filename)
+    assert expected_result == expected_result

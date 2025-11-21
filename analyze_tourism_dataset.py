@@ -227,7 +227,7 @@ def num_of_accomodations(user_country, filename):
 def choice_3_preference_1(write_filename, read_filename, country):
     """Takes the name of the file to read, file to write and the name of 
         the country as the parameters and writes a report of the country
-        to the given file. The report includes: the top rates location in
+        to the given file. The report includes: the top rated location in
         that country, the most visited location in that country, the % of
         locations in that country that provide accomodations, the most popular
         type of tourism in that country and a list of locations that correspond
@@ -316,9 +316,9 @@ def main():
             if choice >= 1 and choice <= 4:
                 break
             else:
-                print("Invalid Input. Please enter a number between 1 and 4.")
+                print("Invalid Input. Please enter a number between 1 and 4.\n")
         except ValueError:
-            print("Invalid Input. Please enter a number between 1 and 4.)")
+            print("Invalid Input. Please enter a number between 1 and 4.\n")
 
     print()
     if choice == 1:

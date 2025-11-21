@@ -1,6 +1,6 @@
-Here are a list of locations based on your preferences. Country: China     Category: Beach
+Here are a list of locations based on your preferences. Country: Egypt     Category: Cultural
 
-Location: Sanya                         Visitors: 416933         Rating: 3.92        Accomodation Available: Yes
-Location: Beidaihe                      Visitors: 96904          Rating: 4.65        Accomodation Available: Yes
-Location: Xiamen Beach                  Visitors: 901898         Rating: 4.97        Accomodation Available: Yes
-Location: Yalong Bay                    Visitors: 115125         Rating: 1.07        Accomodation Available: No
+Location: Cairo                         Visitors: 389886         Rating: 2.19        Accomodation Available: Yes
+Location: Alexandria                    Visitors: 3127           Rating: 1.21        Accomodation Available: No
+Location: Aswan                         Visitors: 689575         Rating: 1.1         Accomodation Available: No
+Location: Giza                          Visitors: 171913         Rating: 3.78        Accomodation Available: Yes
