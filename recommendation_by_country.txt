@@ -1,6 +1,6 @@
-Here are a list of locations based on your preferences. Country: Egypt     Category: Cultural
+Here are a list of locations based on your preferences. Country: Brazil     Category: Adventure
 
-Location: Cairo                         Visitors: 389886         Rating: 2.19        Accomodation Available: Yes
-Location: Alexandria                    Visitors: 3127           Rating: 1.21        Accomodation Available: No
-Location: Aswan                         Visitors: 689575         Rating: 1.1         Accomodation Available: No
-Location: Giza                          Visitors: 171913         Rating: 3.78        Accomodation Available: Yes
+Location: Chapada dos Veadeiros         Visitors: 354395         Rating: 1.53        Accomodation Available: Yes
+Location: Lençóis Maranhenses           Visitors: 519911         Rating: 2.11        Accomodation Available: Yes
+Location: Fernando de Noronha           Visitors: 910609         Rating: 3.19        Accomodation Available: Yes
+Location: Serra dos Órgãos              Visitors: 843204         Rating: 2.13        Accomodation Available: Yes
